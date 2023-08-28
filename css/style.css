@@ -15,6 +15,13 @@ body{
     font-size: 14px;
 }
 
+.container{
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
 .header-logo{
     font-family: Raleway;
     font-size: 26px;
@@ -60,6 +67,8 @@ body{
 }
 
 .section-hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--button-background);
 }
 
@@ -83,6 +92,11 @@ body{
     background-color: var(--logo-first);
 }
 
+.section-features{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .features-list-title{
 font-weight: 700;
 line-height: 1.1;
@@ -99,6 +113,11 @@ color: var(--menu-nav);
     color: var(--address);
 }
 
+.section-work{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-work-title{
     font-size: 36px;
     font-weight: 700;
@@ -106,6 +125,12 @@ color: var(--menu-nav);
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--menu-nav);
+}
+
+.section-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--second-page-button-background);
 }
 
 .section-team-title{
@@ -151,6 +176,15 @@ a[href^="https"]{
     color: var(--head-color);
 }
 
+.portfolio-section{
+    padding-top: 94px;
+    padding-bottom: 94px; 
+}
+
+.filter-list{
+    margin-bottom: 34px;
+}
+
 .filter-list-btn{
     font-family: Roboto;
     font-size: 16px;
@@ -159,6 +193,10 @@ a[href^="https"]{
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--menu-nav);
+}
+
+.portfolio-list{
+    margin-top: 34px;
 }
 
 .portfolio-list-title{
