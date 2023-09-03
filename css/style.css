@@ -153,13 +153,9 @@ color: var(--menu-nav);
     padding-bottom: 94px;
 }
 
-.section-work-wrap{
-    display: flex;
-    justify-content: space-between;
-}
-
 .work-list{
     display: flex;
+    justify-content: space-between;
     gap: 30px;
 }
 
