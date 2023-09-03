@@ -155,7 +155,7 @@ color: var(--menu-nav);
 
 .section-work-wrap{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .work-list{
