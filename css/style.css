@@ -15,6 +15,27 @@ body{
     font-size: 14px;
 }
 
+.header{
+    padding: 24px 0;
+}
+
+.header-wrap{
+    display: flex;
+    gap: 94px;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    gap: 50px;
+}
+
+.contacts-list{
+    margin-left: auto;
+    display: flex;
+    gap: 50px;
+}
+
 .container{
     width: 1200px;
     padding-right: 15px;
@@ -66,6 +87,7 @@ body{
     color: var(--address);
 }
 
+
 .section-hero{
     padding-top: 200px;
     padding-bottom: 200px;
@@ -82,7 +104,10 @@ body{
 }
 
 .section-hero-btn{
-    font-family: Roboto;
+    margin: 0 auto;
+    display: block;
+    height: 50px;
+    width: 216px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.9;
@@ -92,9 +117,19 @@ body{
     background-color: var(--logo-first);
 }
 
+.section-features-wrap{
+    display: flex;
+   justify-content: space-around;
+}
+
 .section-features{
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.features-list{
+    display: flex;
+    gap: 30px;
 }
 
 .features-list-title{
@@ -118,6 +153,16 @@ color: var(--menu-nav);
     padding-bottom: 94px;
 }
 
+.section-work-wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-list{
+    display: flex;
+    gap: 30px;
+}
+
 .section-work-title{
     font-size: 36px;
     font-weight: 700;
@@ -131,6 +176,16 @@ color: var(--menu-nav);
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--second-page-button-background);
+}
+
+.section-team-wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-list{
+    display: flex;
+    gap: 30px;
 }
 
 .section-team-title{
@@ -170,6 +225,7 @@ color: var(--menu-nav);
 
 footer{
     background-color: var(--button-background);
+    padding: 60px 0;
 }
 
 a[href^="https"]{
