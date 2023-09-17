@@ -101,6 +101,7 @@ body{
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--head-color);
+    margin-bottom: 30px;
 }
 
 .section-hero-btn{
@@ -235,7 +236,6 @@ a[href^="https"]{
     display: flex;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 34px;
 }
 
 .filter-list-btn{
@@ -246,6 +246,7 @@ a[href^="https"]{
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--menu-nav);
+    padding: 6px 22px 6px 22px;
 }
 
 .portfolio-list{
@@ -255,6 +256,10 @@ a[href^="https"]{
     margin-top: 34px;
 }
 
+.portfolio-list-wrap{
+    padding: 20px 24px 20px 24px;
+}
+
 .portfolio-list-title{
     font-size: 18px;
     font-weight: 700;
@@ -262,6 +267,7 @@ a[href^="https"]{
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--menu-nav);
+    margin-bottom: 4px;
 }
 
 .portfolio-list-desc{
