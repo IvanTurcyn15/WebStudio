@@ -36,7 +36,27 @@ body{
 .contacts-list{
     margin-left: auto;
     display: flex;
-    gap: 50px;
+    align-items: center;
+    gap: 30px;
+}
+
+.contacts-list-link{
+    width: 161px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgba(117, 117, 117, 1);
+}
+
+.contacts-list-link:hover{
+    color: rgba(33, 150, 243, 1);
+}
+
+.contacts-list-svg{
+    margin-bottom: 2px;
+    fill: currentColor;
 }
 
 .container{
@@ -151,7 +171,7 @@ margin-top: 30px;
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    background-image: url(../images/Group1.png);
+    background-image: url(../images/features-list-imgfirst.png);
     display: inline-block;
 }
 
@@ -160,7 +180,7 @@ margin-top: 30px;
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    background-image: url(../images/Group2.png);
+    background-image: url(../images/features-list-imgsecond.png);
     display: inline-block;
 }
 
@@ -169,7 +189,7 @@ margin-top: 30px;
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    background-image: url(../images/Group3.png);
+    background-image: url(../images/features-list-imgthird.png);
     display: inline-block;
 }
 
@@ -178,7 +198,7 @@ margin-top: 30px;
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    background-image: url(../images/Group4.png);
+    background-image: url(../images/features-list-imgfourth.png);
     display: inline-block;
 }
 
@@ -199,6 +219,29 @@ margin-top: 30px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+
+.work-list-desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.work-list-wrap{
+    position: relative;
 }
 
 .section-work-title{
@@ -233,6 +276,33 @@ margin-top: 30px;
     background-color: var(--head-color);
 }
 
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.social-list-link{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgba(175, 177, 184);
+}
+
+.social-list-link:hover{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(33, 150, 243, 1);
+}
+
+.social-list-svg{
+    fill: currentColor;
+}
 
 .section-team-title{
     font-size: 36px;
@@ -244,6 +314,10 @@ margin-top: 30px;
     margin-bottom: 50px;
 }
 
+.team-list-info{
+    margin-top: 30px;
+}
+
 .team-list-title{
     font-size: 16px;
     font-weight: 500;
@@ -252,7 +326,6 @@ margin-top: 30px;
     text-align: center;
     color: var(--menu-nav);
     margin-bottom: 10px;
-    margin-top: 30px;
 }
 
 .team-list-desc{
@@ -262,7 +335,53 @@ margin-top: 30px;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--address);
-    margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------------------|
+                                                                  |
+Постійні клієнти                                                  | 
+---------------------------------------------------------------- */
+
+.section-clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+
+.clients-title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;  
+    margin-bottom: 50px;
+}   
+ 
+.clients-list{
+    display: flex;
+    gap: 30px;
+}
+
+.clients-list-item{
+    flex-basis: calc((100% - 150px) / 6);
+}
+
+.clients-list-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    border-radius: 4px;
+    border: solid 1px;
+    color: rgba(175, 177, 184, 1);
+}
+
+.clients-list-link:hover{
+    color: rgba(33, 150, 243, 1);
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.clients-list-svg{
+    fill: currentColor;
 }
 
 .address-list-link{
@@ -280,6 +399,47 @@ footer{
 
 a[href^="https"]{
     color: var(--head-color);
+}
+
+.footer-wrap{
+    display: flex;
+    gap: 70px;
+}
+
+.join-wrap-title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.join-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.join-list-link{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.join-list-link:hover{
+    background-color: rgba(33, 150, 243, 1);
+}
+
+.join-list-svg{
+    fill: currentColor;
 }
 
 .portfolio-section{
