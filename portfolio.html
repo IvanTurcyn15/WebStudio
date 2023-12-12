@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<!--Шапка-->
-        <header class="header">
-            <div class="container">
-                <div class="header-wrap">
+    <!--Шапка-->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap">
     <a href="" class="header-logo">Web<span class="header-studio">Studio</span></a>
     <!--Навігація-->
     <nav class="nav">
@@ -27,12 +27,22 @@
     </ul>
     </nav>
     <ul class="contacts-list">
-        <li class="contacts-list-item"><a href="mailto:" class="contacts-list-link">info@devstudio.com</a></li>
-        <li class="contacts-list-item"><a href="tel:" class="contacts-list-link">+38 096 111 11 11</a></li>
+        <li class="contacts-list-item">
+            <a href="mailto:" class="contacts-list-link">
+                <svg class="contacts-list-svg" width="16" height="12">
+                    <use href="./symbol-defs.svg#icon-email-connection"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+        <li class="contacts-list-item">
+            <a href="tel:" class="contacts-list-link">
+                <svg class="contacts-list-svg" width="10" height="16">
+                    <use href="./symbol-defs.svg#icon-phone-connection"></use>
+                </svg>+38 096 111 11 11</a>
+        </li>
     </ul>
-                </div>
             </div>
-        </header>
+        </div>
+    </header>
     <main>
         <!-- Кнопки -->
     <section class="portfolio-section">
@@ -116,6 +126,8 @@
         <!--Підвал-->
         <footer class="footer">
             <div class="container">
+                <div class="footer-wrap">
+                    <div class="address-box">
             <a href="" class="footer-logo">Web<span class="footer-studio">Studio</span></a>
             <address class="address">
                 <ul class="address-list">
@@ -124,6 +136,41 @@
                     <li class="adress-list-item"><a href="tell:" class="address-list-link">+38 096 111 11 11</a></li>
                 </ul>
             </address>
+                    </div>
+        <div class="join-wrap">
+                <h6 class="join-wrap-title">приєднуйтесь</h6>
+                    <ul class="join-list">
+                         <li class="join-list-item">
+                            <a class="join-list-link" href="">
+                                <svg class="join-list-svg" width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-list-item">
+                            <a class="join-list-link" href="">
+                                <svg class="join-list-svg" width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-list-item">
+                            <a class="join-list-link" href="">
+                                <svg class="join-list-svg" width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-list-item">
+                            <a class="join-list-link" href="">
+                                <svg class="join-list-svg" width="20" height="20">
+                                    <use href="./symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+        </div>
+                </div>  
             </div>
         </footer>
 </body>
