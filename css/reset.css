@@ -24,3 +24,7 @@ address{
 img{
     display: block;
 }
+
+textarea{
+    resize: none;
+}
