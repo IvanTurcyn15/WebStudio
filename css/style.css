@@ -209,7 +209,11 @@ body{
 /* ------------------------------------------------------------------------------------------ */
 .header{
     padding: 24px 0;
-    border: 1px solid var(--portfolio-line);
+    border-bottom: 1px solid var(--portfolio-line);
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1;
 }
 
 .header-wrap{
@@ -284,21 +288,21 @@ body{
     color: var(--head-color);
 }
 
-.nav-list-item{
-    position: relative;
-    /* margin-bottom: 32px; */
-}
-
 .nav-list-link{
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
     color: var(--menu-nav);
+    position: relative;
 }
 
 .nav-list-link:hover{
     color: rgba(33, 150, 243, 1);
+}
+
+.active{
+   color:rgba(33, 150, 243, 1);;
 }
 
 .active::after{
@@ -310,6 +314,7 @@ body{
     height: 4px;
     border-radius: 2px;
     background-color: rgba(33, 150, 243, 1);
+    margin-bottom: -32px;
 }
 
 .contacts-list-link{
@@ -354,6 +359,10 @@ body{
     background-color: var(--logo-first);
     margin-top: 30px;
     border-radius: 4px;
+}
+
+.section-hero-btn:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .section-features{
@@ -680,6 +689,7 @@ a[href^="https"]{
     padding: 15px;
     width: 358px;
     outline: none;
+    color: rgba(255, 255, 255, 1);
 }
 
 .footer-form-input::placeholder{
@@ -762,20 +772,34 @@ a[href^="https"]{
 }
 
 .portfolio-list-item{
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     outline: 1px solid var(--second-page-container-bg);
+    width: 370px;
+    height: 404px;
 }
 
+.overlay-desc{
+    max-width: 322px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.portfolio-list-item:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 .portfolio-list-wrap{
     padding: 20px 24px 20px 24px;
 }
+
 
 .portfolio-list-title{
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
-    text-align: left;
     color: var(--menu-nav);
     margin-bottom: 4px;
 }
