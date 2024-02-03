@@ -771,20 +771,41 @@ a[href^="https"]{
     margin-top: 34px;
 }
 
-.portfolio-list-item{
-    outline: 1px solid var(--second-page-container-bg);
+.portfolio-list-item{   
     width: 370px;
     height: 404px;
 }
 
+.portfolio-list-wrap{
+    padding: 20px 24px;
+    border: 1px solid var(--second-page-container-bg);
+    border-top: none;
+}
+
+.portfolio-list-item:hover .overlay-desc {
+    transform: translateY(0);
+}
+
+.overlay{
+    position: relative;
+    overflow: hidden;
+}
+
 .overlay-desc{
-    max-width: 322px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.90);
+    transition: transform 0.4s ease;
     font-family: Roboto;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 1);
+    padding: 63px 24px;
 }
 
 .portfolio-list-item:hover{
